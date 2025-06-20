@@ -1,20 +1,65 @@
 # Alpha-Synuclein-Nterminal-Fragments-Simulations-VN
-This repository contains the data, Fortran codes, and excel spreadsheets associated with the paper "In silico peptide self-assembly reveals the importance of 
-N-terminal motifs and the inhibition mechanism of the mutation L38M in α-synuclein fibrillation" (Nguyen et al.), submitted to Protein Science.
-# Requirement and Installation
-The analysis codes are in Fortran that can be run using Intel Fortran ifort/ifx compiler. The coordinate files of the peptides can be visualized using VMD (Visual Molecular Dynamics). All of provided data are in text file format that can be access with any analysis tools. The movies are compatible with major video players.
-# Data for paper
-/movies/ - This directory contains five movies as examples of our simulations of peptide P1-WT, P2 (S- and U-shape beta-sheets), P3-WT, and P3Next-WT.
-Besides the compelet movies, we also provide final PDB files and the trajectories from all simulations to generate movies using VMD.
 
-/pdbfiles/ - This diretory contains final coordinates of the peptides in each simulations. PDB files can be visualized using VMD.
+This repository contains the data, Fortran codes, and Excel spreadsheets associated with the manuscript:  
+**"In silico peptide self-assembly reveals the importance of N-terminal motifs and the inhibition mechanism of the mutation L38M in α-synuclein fibrillation"** (Nguyen et al.), submitted to *Protein Science*.
 
-/trajectories/ - This directory contains trajectories from all simulations. The trajectories cannot be read individially but can be loaded with corresponding PDB files to VMD for visualizing aggregation process.
+---
 
-/energyfiles/ - This directory contains energy profiles of each simulations. The profiles recorded energy changes as time evovled. The files are in text format and can be open by any popular data analysis tools. 
+## Requirements & Installation
 
-/VMD-SecondaryStructures/ - This directory contains the secondary structure files exported from VMD as well as the Fortran code that was used for the calculation of beta-hairpins and beta-strand.
+- Analysis codes are written in **Fortran** and can be compiled using the **Intel Fortran compiler** (`ifort` or `ifx`).
+- Peptide structure and trajectory files can be visualized using **VMD (Visual Molecular Dynamics)**.
+- All data files are in plain text format and can be opened with standard analysis tools.
+- Simulation movies are in standard video formats compatible with most media players.
 
-/spreadsheets/ - This directory contains the 3 excel spreadsheets that were used to calculate and plot Figure 3c, 5b and 6b in our paper.
+---
 
-/parallel_antiparallel/ - This directory contains the results from using our PRIME20 analysis code that applied DSSP method to calculate the numnber of parallel and antiparallel residues in a system. 
+## Repository Contents
+
+### `/movies/`
+Contains five simulation movies of:
+- P1-WT
+- P2 (S- and U-shaped β-sheets)
+- P3-WT
+- P3Next-WT
+
+---
+
+### `/pdbfiles/`
+- Final peptide coordinates in **PDB** format
+- Visualizable with VMD
+
+---
+
+### `/trajectories/`
+- Trajectories from all simulations
+- **Note:** Must be loaded with their corresponding PDB files in VMD to properly visualize aggregation
+
+---
+
+### `/energyfiles/`
+- Energy profiles tracking changes over simulation time
+- Files are plain text and compatible with tools like Excel, MATLAB, Python, etc.
+
+---
+
+### `/VMD-SecondaryStructures/`
+- VMD-exported secondary structure files
+- Fortran source code used to calculate β-hairpins and β-strands
+
+---
+
+### `/spreadsheets/`
+- Three Excel spreadsheets used for generating:
+  - **Figure 3c**
+  - **Figure 5b**
+  - **Figure 6b**  
+  from the manuscript
+
+---
+
+### `/parallel_antiparallel/`
+- Results from **PRIME20** analysis code
+- Uses **DSSP** method to calculate number of parallel and antiparallel residues
+
+---
