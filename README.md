@@ -15,4 +15,6 @@ Besides the compelet movies, we also provide final PDB files and the trajectorie
 
 /VMD-SecondaryStructures/ - This directory contains the secondary structure files exported from VMD as well as the Fortran code that was used for the calculation of beta-hairpins and beta-strand.
 
-/codes-and-spreadsheets/ - This directory contains the Fortran code that are used to calculate numbers of beta-hairpins and beta-strands in the beta-sheets, the 3 excel spreadsheet that were used to calculate and plot Figure 3c, 5b and 6b in our paper.
+/spreadsheets/ - This directory contains the 3 excel spreadsheets that were used to calculate and plot Figure 3c, 5b and 6b in our paper.
+
+/parallel_antiparallel/ - This directory contains the results from using our PRIME20 analysis code that applied DSSP method to calculate the numnber of parallel and antiparallel residues in a system. 
